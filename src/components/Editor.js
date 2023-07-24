@@ -18,7 +18,7 @@ const Container = styled(Box)`
     flex-basic: 0;
     display: flex;
     flex-direction: column;
-    padding: 0 8px 8px;
+    padding: 3px 4px 
 `
 
 const Header = styled(Box)`

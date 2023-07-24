@@ -1,5 +1,4 @@
 import { useState, useEffect, useContext } from 'react';
-
 import { DataContext } from '../context/DataProvider';
 
 import { Box, styled } from '@mui/material';
@@ -30,7 +29,7 @@ const Result = () => {
     }, [html, css, js])
 
     return (
-        <Container style={html || css || js ? null : {background: '#444857' }}>
+        <Container style={html || css || js ? null : {background: 'white' }}>
             <iframe 
                 srcDoc={src}
                 title="output"
