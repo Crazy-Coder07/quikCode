@@ -3,15 +3,21 @@ import logo from "../quikcode_logo.png"
 const Container = styled(AppBar)`
     background: #008000;
     position: static;
-    border-bottom: 5px solid #3366ff;
-    height: 9vh;
+    height: 7vh;
+    padding-top:0px;
+    margin-top:-10px;
+`;
+const LogoImage = styled('img')`
+  width: 42px;
+  margin-top:-10px;
 `;
 
 const Header = () => {
     return (
         <Container>
             <Toolbar>
-                <img src={logo} alt="logo" style={{ width: 46 }} />
+                <LogoImage src={logo} alt="logo" />
+                <h1 style={{marginLeft:'35%'}}>Welcome To Quick - Code </h1>
             </Toolbar>
         </Container>
     )

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/theme/material.css';
 import 'codemirror/mode/xml/xml';
@@ -7,10 +6,8 @@ import 'codemirror/mode/javascript/javascript';
 import 'codemirror/mode/css/css';
 
 import { Controlled as ControlledEditor } from 'react-codemirror2';
-
 import { Box, Typography, Button, styled } from '@mui/material';
 import { CloseFullscreen } from '@mui/icons-material';
-
 import '../App.css';
 
 const Container = styled(Box)`
@@ -29,12 +26,13 @@ const Header = styled(Box)`
     font-weight: 700;
 `
 const Heading = styled(Box)`
-    background: #1d1e22;
-    padding: 9px 12px;
-    display: flex
+    background: #7ed7d9;
+    padding: 9px 40%;
+    display: flex;
+    overflow:auto;
 `
 
-const Editor = ({ heading, language, value, onChange, icon, color }) => {
+const Editor = ({ heading, language, value, onChange, color }) => {
 
     const [open, setOpen] = useState(true);
 
@@ -51,18 +49,17 @@ const Editor = ({ heading, language, value, onChange, icon, color }) => {
                         style={{
                             background: color,
                             borderRadius: 5,
-                            marginRight: 5,
+                            marginRight: 2,
                             height: 20,
-                            width: 20,
+                            width: 80,
                             display: 'flex',
                             placeContent: 'center',
                             color: '#000',
-                            paddingBottom: 2
+                            padding:9
                         }}
                     >
-                        {icon}
+                        {heading}
                     </Box>
-                    {heading}
                 </Heading>
                 <CloseFullscreen 
                     fontSize="small"
