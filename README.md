@@ -12,7 +12,7 @@ Features
 
 Technologies Used
 
-    Frontend: HTML5, CSS3, JavaScript (ES6+)
+    Frontend: HTML5, CSS3, JavaScript (ES6+), React, react-mirror
     CodeMirror/Monaco Editor: For syntax highlighting and code formatting.
     Live Preview: Embeds the generated code output into an iframe.
 
@@ -21,9 +21,7 @@ Installation & Setup
 No installation is needed! Simply clone the repository and run the project locally.
 Steps to Run Locally
 
-    Clone the repository:
-
-    bash
+    Clone the repository
 
     git clone https://github.com/Crazy-Coder07/quikCode.git
 
